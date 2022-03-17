@@ -6,7 +6,7 @@ Continuously scanning new listings of a collection on **OpenSea** to snipe with 
 If the bot does not function properly, feel free to [open an issue](https://github.com/binhnguyen98/opensea-snipe-bot-js-private/issues).
 
 The code has been **obfuscated**. If you need unobfuscated source code, explanation, or have a new feature idea, 
-please contact us [contact me](https://t.me/benguen).
+please [contact me](https://t.me/benguen).
 
 #### Discord will follow soon! 
 #### Demo video will follow soon!
