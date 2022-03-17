@@ -1,0 +1,11 @@
+/node_modules/
+/.idea/
+
+package-lock.json
+
+config.js
+log.txt
+
+.stop
+*.zip
+

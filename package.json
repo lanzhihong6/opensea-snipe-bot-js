@@ -1,0 +1,22 @@
+{
+  "name": "opensea-snipe-bot",
+  "version": "1.0.0",
+  "description": "Sniping listings on OpenSea",
+  "main": "snipes.js",
+  "scripts": {
+    "postinstall": "node hotfix.js",
+    "start": "node snipes.js"
+  },
+  "author": "binhnguyen98",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "async-mutex": "^0.3.2",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "axios": "^0.26.0",
+    "ethers": "^5.5.4",
+    "opensea-js": "^2.0.2",
+    "web3": "^1.7.1",
+    "yargs": "^17.3.1"
+  }
+}
