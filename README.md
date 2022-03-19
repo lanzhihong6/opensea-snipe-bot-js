@@ -8,6 +8,7 @@ If the bot is not working, feel free to [open an issue](https://github.com/binhn
 The code is **obfuscated**. [Contact me]() if you need access to unobfuscated source code, guidance, or you have a new feature proposal.
 
 #### Discord will follow soon!
+#### Demo video will follow soon!
 
 ## Some tips to successfully run automatic operations on OpenSea
 - Have an OpenSea API key. You can request one [here](https://docs.opensea.io/reference/request-an-api-key).
