@@ -1,14 +1,13 @@
-# opensea-snipe-bot-js
+# sea-snipe-bot-js-private
 
-Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic **99%** probability gas fee settings using the 
+Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic _99%_ probability gas fee settings using the
 [Blocknative Gas-Estimator](https://www.blocknative.com/gas-estimator) API.
 
-If the bot does not function properly, feel free to [open an issue](https://github.com/binhnguyen98/opensea-snipe-bot-js-private/issues).
+If the bot is not working, feel free to [open an issue](https://github.com/binhnguyen98/sea-snipe-bot-js-private/issues).
 
-The code has been **obfuscated**. If you need unobfuscated source code, explanation, or have a new feature idea, 
-please [contact me](https://t.me/benguen).
+The code is **obfuscated**. [Contact me]() if you need access to unobfuscated source code, guidance, or you have a new feature proposal.
 
-#### Discord will follow soon! 
+#### Discord will follow soon!
 #### Demo video will follow soon!
 
 ## Some tips to successfully run automatic operations on OpenSea
@@ -17,8 +16,8 @@ please [contact me](https://t.me/benguen).
 - You can run multiple bot instances simultaneously with different configurations.
 - Don't do too many requests in a short time.
 
-Exercise extreme caution while trading automatically!
-Maintain a second account with a modest balance only for the purpose of testing unknown bots and services.
+Be very precautious with automatic trading!
+Have a separate account with small balance for testing unknown bots and services.
 
 ## Configuration
 
@@ -33,15 +32,16 @@ Maintain a second account with a modest balance only for the purpose of testing 
 
 ### Optional settings
 - Snipe options:
-  - `price_percent` - % below floor price for snipe trigger.
-  - `additional_gas` - % added on top to 99% probability gas setting.
+  - `price_percent` - % below floor price for snipe trigger. Default: `75`
+  - `additional_gas` - % added on top to 99% probability gas setting. Default: `35`
 - Delay options:
-  - `floor_interval` - interval to get floor price of a collection. (processing time not included)
-  - `delay` - delay in milliseconds.
+  - `floor_interval` - interval to get floor price of a collection in seconds.  Default: `20`
+  - `rate_limit` - rate to get new listings in seconds. Default: `10`
+  - `delay` - delay in milliseconds.  Default: `5000`
 - HTTP request options:
-    - `cookie` - Cookie data. No Cookie by default.
-    - `user_agent` - User-Agent data. No User-Agent by default.
-    
+  - `cookie` - Cookie data. No Cookie by default.
+  - `user_agent` - User-Agent data. No User-Agent by default.
+
 Default config file: `config.js`.
 
 **Example**
@@ -61,7 +61,7 @@ const config = {
         "delay" : 500, // milliseconds
       
         "wallet_address": "<your wallet address>", 
-        "mnemonic": "<your mnemonic phrase>",
+        "mnemonic": "<your mnemonic phrase>"
         "private_key": [ "<your private key>" ], 
       
         "cookie": " <your cf_clearence cookie>", 
@@ -75,7 +75,7 @@ exports.config = config.production;
 ## Command line arguments
 - `--output=<file name>` - output log file. Default: `log.txt`.
 - `--verbose` - print all messages to the console.
-
+- `--log_opensea` - print all OpenSea error messages to the console.
 ## Usage
 You should have an _Infura_, an _OpenSea_ and a _Blocknative_ API key, an OpenSea account and a MetaMask account.
 
@@ -94,7 +94,7 @@ node snipes.js --verbose
 <!-- **Demo video** - https://youtu.be/sGwS2v-S2wk -->
 
 ## Troubleshooting
-If the bot don't work with recent Node.js version, try to use **v16** or **v12** (12.14.0).
+If the bot don't work with recent Node.js version, try to use **v16**.
 You can use **NVM** to easily switch versions.
 
 ## For tip
