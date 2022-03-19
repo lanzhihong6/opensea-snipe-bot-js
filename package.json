@@ -1,6 +1,6 @@
 {
   "name": "opensea-snipe-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sniping listings on OpenSea",
   "main": "snipes.js",
   "scripts": {
@@ -18,5 +18,14 @@
     "opensea-js": "^2.0.2",
     "web3": "^1.7.1",
     "yargs": "^17.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binhnguyen98/opensea-snipe-bot-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/binhnguyen98/opensea-snipe-bot-js/issues"
+  },
+  "homepage": "https://github.com/binhnguyen98/opensea-snipe-bot-js#readme"
 }
