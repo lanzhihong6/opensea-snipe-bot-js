@@ -1,12 +1,12 @@
-# opensea-snipe-bot-js
+# sea-snipe-bot-js-private
 
-Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic _99%_ probability gas fee settings using the
+Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic **99%** probability gas fee settings using the
 [Blocknative Gas-Estimator](https://www.blocknative.com/gas-estimator) API.
 
-If the bot is not working, feel free to [open an issue](https://github.com/binhnguyen98/sea-snipe-bot-js-private/issues).
+If the bot does not function properly, feel free to [open an issue](https://github.com/binhnguyen98/opensea-snipe-bot-js-private/issues).
 
-The code is **obfuscated**. [Contact me]() if you need access to unobfuscated source code, guidance, or you have a new feature proposal.
-
+The code has been **obfuscated**. If you need unobfuscated source code, explanation, or have a new feature idea,
+please [contact me](https://t.me/benguen).
 #### Discord will follow soon!
 #### Demo video will follow soon!
 
@@ -16,8 +16,8 @@ The code is **obfuscated**. [Contact me]() if you need access to unobfuscated so
 - You can run multiple bot instances simultaneously with different configurations.
 - Don't do too many requests in a short time.
 
-Be very precautious with automatic trading!
-Have a separate account with small balance for testing unknown bots and services.
+Exercise extreme caution while trading automatically!
+Maintain a second account with a modest balance only for the purpose of testing unknown bots and services.
 
 ## Configuration
 
@@ -58,10 +58,11 @@ const config = {
         "price_percent": 75, 
         "additional_gas": 30, 
         "floor_interval": 2, // seconds
+        "rate_limit": 10, // seconds
         "delay" : 500, // milliseconds
       
         "wallet_address": "<your wallet address>", 
-        "mnemonic": "<your mnemonic phrase>"
+        "mnemonic": "<your mnemonic phrase>",
         "private_key": [ "<your private key>" ], 
       
         "cookie": " <your cf_clearence cookie>", 
@@ -94,7 +95,7 @@ node snipes.js --verbose
 <!-- **Demo video** - https://youtu.be/sGwS2v-S2wk -->
 
 ## Troubleshooting
-If the bot don't work with recent Node.js version, try to use **v16**.
+If the bot don't work with recent Node.js version, try to use **v16** or **v12** (12.14.0).
 You can use **NVM** to easily switch versions.
 
 ## For tip
