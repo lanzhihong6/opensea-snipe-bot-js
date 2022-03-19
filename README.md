@@ -1,4 +1,4 @@
-# sea-snipe-bot-js-private
+# opensea-snipe-bot-js
 
 Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic _99%_ probability gas fee settings using the
 [Blocknative Gas-Estimator](https://www.blocknative.com/gas-estimator) API.
