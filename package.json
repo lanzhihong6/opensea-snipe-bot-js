@@ -9,7 +9,7 @@
   },
   "author": "binhnguyen98",
   "license": "UNLICENSED",
-  "private": true,
+  "private": false,
   "dependencies": {
     "async-mutex": "^0.3.2",
     "@truffle/hdwallet-provider": "^2.0.3",

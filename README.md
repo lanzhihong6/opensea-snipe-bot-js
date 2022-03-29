@@ -1,4 +1,4 @@
-# sea-snipe-bot-js-private
+# opensea-snipe-bot-js
 
 Continuously scanning new listings of a collection on **OpenSea** to snipe with automatic **99%** probability gas fee settings using the
 [Blocknative Gas-Estimator](https://www.blocknative.com/gas-estimator) API.
@@ -47,26 +47,26 @@ Default config file: `config.js`.
 **Example**
 ```js
 const config = {
-    "production": {
-        "network": "mainnet", 
-        "infura_key" : "<your infura node key>", 
-        "opensea_key": "<your opensea api key>", 
-        "blocknative_key": "<your blocknative api key>",
-      
-        "collection_slug": "azuki",
-      
-        "price_percent": 75, 
-        "additional_gas": 30, 
-        "floor_interval": 2, // seconds
-        "rate_limit": 10, // seconds
-        "delay" : 500, // milliseconds
-      
-        "wallet_address": "<your wallet address>", 
-        "mnemonic": "<your mnemonic phrase>",
-        "private_key": [ "<your private key>" ], 
-      
-        "cookie": " <your cf_clearence cookie>", 
-        "user_agent": "<your useragent>"
+  "production": {
+    "network": "mainnet",
+    "infura_key" : "<your infura node key>",
+    "opensea_key": "<your opensea api key>",
+    "blocknative_key": "<your blocknative api key>",
+
+    "collection_slug": "azuki",
+
+    "price_percent": 75,
+    "additional_gas": 30,
+    "floor_interval": 2, // seconds
+    "rate_limit": 10, // seconds
+    "delay" : 500, // milliseconds
+
+    "wallet_address": "<your wallet address>",
+    "mnemonic": "<your mnemonic phrase>",
+    "private_key": [ "<your private key>" ],
+
+    "cookie": " <your cf_clearence cookie>",
+    "user_agent": "<your useragent>"
   }
 }
 
@@ -100,5 +100,3 @@ You can use **NVM** to easily switch versions.
 
 ## For tip
 - `eth` Ethereum `0x0b8430c59aaa7ffa548d6318adfac21203bc3657`
-
-#### Thanks for [automainint](https://github.com/automainint) (Mitya Selivanov) for providing guidance for this project!
