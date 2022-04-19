@@ -1,3 +1,11 @@
+## 19.04.2022
+*Version 1.0.2*
+- bugfix during `fulfillOrder()` call
+- added safety-measure for mis-priced scam
+- additional logging
+- refactoring of snipe logic
+
+
 ## 19.03.2022
 *Version 1.0.1*
 - added validation check for `config.json` and set default values
